@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<HEAD>
+<title>Panda</title>
+    <style>
+       body {
+        margin: 0;
+       }
+
+       .container {
+        width: 100vw;
+        height: 100vh;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+
+        display:grid ;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px 1fr 75px;
+
+        gap: 10px;
+        box-sizing: border-box;
+       }
+
+       .container div {
+            padding: 10px;
+            border: 1px solid #000;
+       }
+
+       .header {
+            grid-column-start: 1;
+            grid-column-end: 3;
+       }
+
+       .footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+       }
+       
+    </style>
+</HEAD>
+
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="container-large">Content Area</div>
+        <div class="footer">FOOTER</div>
+</body>
